@@ -1,0 +1,133 @@
+.pb-portfolio-row {
+	display: block;
+	width: 100%;
+	margin: 25px 0;
+}
+
+#pb-portfolio-gallery,
+#pb-portfolio-video,
+#pb-portfolio-audio {
+	display: none;
+}
+
+.pb-portfolio-row:before,
+.pb-portfolio-row:after {
+	content: "";
+	display: table;
+}
+
+.pb-portfolio-row:after {
+	clear: both;
+}
+
+.pb-portfolio-left-div {
+	float: left;
+	text-align: right;
+	vertical-align: top;
+	width: 25%;
+	padding: 0 10px;
+}
+.pb-portfolio-left-div label{
+	font-weight: bold;
+}
+
+.pb-portfolio-right-div {
+	float: right;
+	vertical-align: top;
+	width: 70%;
+}
+
+.pb-portfolio-right-div textarea{
+	width: 100%;
+	vertical-align: top;
+	padding: 1em;
+}
+
+.pb-portfolio-checkboxes {
+	margin: 5px 0;
+	padding: 0;
+}
+
+.pb-portfolio-checkboxes li {
+	display: inline;
+	margin-right: 20px;
+}
+
+.pb-portfolio-checkboxes label  {
+	vertical-align: top;
+}
+
+#pb-portfolio-gallery-images li {
+	display: inline-block;
+	margin: 0 8px 8px 0;
+}
+
+#pb-portfolio-details {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#pb-portfolio-details .description {
+	margin-bottom: 16px;
+}
+
+table.pb-portfolio-details-table {
+	border-bottom: 0;
+}
+
+table.pb-portfolio-details-table a {
+	text-decoration: none !important;
+}
+
+table.pb-portfolio-details-table > thead > tr > th,
+table.pb-portfolio-details-table > tbody > tr > td {
+	border-right: 1px solid #e5e5e5;
+}
+
+table.pb-portfolio-details-table > thead > tr > th.pbpd-table-remove,
+table.pb-portfolio-details-table > tbody > tr > td.pbpd-table-remove {
+	border-right: 0;
+}
+
+table.pb-portfolio-details-table > tbody > tr > td {
+	border-bottom: 1px solid #e5e5e5 !important;
+}
+
+td.pbpd-table-order {
+	background: #f4f4f4;
+	color: #666;
+}
+
+td.pbpd-table-order {
+	min-width: 10px;
+}
+td.pbpd-table-remove {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+td.pbpd-table-order span,
+td.pbpd-table-remove a {
+	display: block;
+	margin-top: 3px;
+	padding-left: 4px;
+	padding-right: 4px;
+	text-align: center;
+	color: #ddd;
+}
+
+td.pbpd-table-remove a:hover {
+	color: #666;
+}
+
+td.pbpd-table-remove {
+	background-color: #f8f8f8;
+}
+
+table.pb-portfolio-details-table input[type="text"] {
+	width: 100%;
+}
+
+.pbpd-table-order {
+	cursor: move;
+}
