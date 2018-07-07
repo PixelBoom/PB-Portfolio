@@ -79,7 +79,7 @@ function pb_portfolio_get_audio($post_id, $args = array())
 			$output = wp_oembed_get( $audio );
 		}
 		else {
-			$output = html_entity_decode( esc_html($video) );
+			$output = html_entity_decode( esc_html($audio) );
 		}
 	}
 
