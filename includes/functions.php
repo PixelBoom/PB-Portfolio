@@ -50,7 +50,7 @@ function pb_portfolio_get_video($post_id, $args = array())
 			$output = wp_oembed_get( $video );
 		}
 		else {
-			$output = html_entity_decode( esc_html($video) );
+			$output = do_shortcode( apply_filters( 'the_content', $video ) );
 		}
 	}
 
@@ -79,7 +79,7 @@ function pb_portfolio_get_audio($post_id, $args = array())
 			$output = wp_oembed_get( $audio );
 		}
 		else {
-			$output = html_entity_decode( esc_html($audio) );
+			$output = do_shortcode( apply_filters( 'the_content', $audio ) );
 		}
 	}
 
